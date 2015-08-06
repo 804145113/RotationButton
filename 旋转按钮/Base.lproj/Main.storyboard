@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zAp-j8-enI"/>
+                        <viewControllerLayoutGuide type="bottom" id="86i-kV-ppt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pX-2Q-vVG" customClass="RotationButton">
+                                <rect key="frame" x="66" y="241" width="468" height="47"/>
+                                <color key="backgroundColor" red="1" green="0.17647058823529413" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="pzL-84-c2h"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="故事版自动布局约束">
+                                    <color key="titleColor" red="1" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <outlet property="contraint_height" destination="pzL-84-c2h" id="IYP-N4-j4y"/>
+                                    <outlet property="contraint_left" destination="vUx-EE-GKk" id="tAw-Xu-Us1"/>
+                                    <outlet property="contraint_right" destination="fv1-X7-nmY" id="0ek-pi-0WM"/>
+                                    <outlet property="rotationDelegate" destination="vXZ-lx-hvc" id="ya5-nq-JRC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJW-fg-Rk1">
+                                <rect key="frame" x="76" y="389" width="419" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZVf-S1-Xat"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7pX-2Q-vVG" firstAttribute="top" secondItem="zAp-j8-enI" secondAttribute="bottom" constant="221" id="DtW-yw-mdh"/>
+                            <constraint firstItem="tJW-fg-Rk1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="60" id="HHa-2a-1WA"/>
+                            <constraint firstItem="tJW-fg-Rk1" firstAttribute="top" secondItem="7pX-2Q-vVG" secondAttribute="bottom" constant="101" id="MVf-Yd-wL8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tJW-fg-Rk1" secondAttribute="trailing" constant="89" id="a6X-4S-MOR"/>
+                            <constraint firstAttribute="trailing" secondItem="7pX-2Q-vVG" secondAttribute="trailing" constant="66" id="fv1-X7-nmY"/>
+                            <constraint firstItem="7pX-2Q-vVG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="66" id="vUx-EE-GKk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="320"/>
+        </scene>
+    </scenes>
+</document>
